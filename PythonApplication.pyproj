@@ -1,0 +1,93 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ad8abc50-de2c-4a0f-a4ca-c97d1ad61e9d</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>1_2_01_String.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication</Name>
+    <RootNamespace>PythonApplication</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="1_1_HelloWorld.py" />
+    <Compile Include="2_1_Variable.py" />
+    <Compile Include="2_2_01_Arithmatic.py" />
+    <Compile Include="2_2_02_Substitude.py" />
+    <Compile Include="2_7_03_Math.py" />
+    <Compile Include="2_7_04_Random.py" />
+    <Compile Include="1_2_01_String.py" />
+    <Compile Include="1_2_04_GetAt.py" />
+    <Compile Include="1_2_03_StringCtrl.py" />
+    <Compile Include="1_3_02_Format_align.py" />
+    <Compile Include="1_3_02_Format.py" />
+    <Compile Include="1_3_01_Printf.py" />
+    <Compile Include="1_2_02_Escape.py" />
+    <Compile Include="2_5_01_List.py" />
+    <Compile Include="2_5_02_Dictionary.py" />
+    <Compile Include="2_5_03_Tuple.py" />
+    <Compile Include="2_5_04_Set.py" />
+    <Compile Include="2_5_05_Typecast.py" />
+    <Compile Include="2_3_If.py" />
+    <Compile Include="2_4_01_For.py" />
+    <Compile Include="2_4_02_While.py" />
+    <Compile Include="2_4_03_Break.py" />
+    <Compile Include="2_6_05_Pass.py" />
+    <Compile Include="2_6_01_Function.py" />
+    <Compile Include="2_6_02_Default.py" />
+    <Compile Include="2_6_04_....py" />
+    <Compile Include="2_6_03_Global.py" />
+    <Compile Include="2_7_05a_File.py" />
+    <Compile Include="2_7_05b_Pickle.py" />
+    <Compile Include="2_7_05c_With.py" />
+    <Compile Include="3_1_Class.py" />
+    <Compile Include="3_2_01_Extends.py" />
+    <Compile Include="3_2_02_Extends_Multi.py" />
+    <Compile Include="3_2_04_Overriding.py" />
+    <Compile Include="3_2_03_Super.py" />
+    <Compile Include="3_5_01_Exception.py" />
+    <Compile Include="2_7_01_Import.py" />
+    <Compile Include="3_3_00_Package.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="2_7_06_Inspect.py" />
+    <Compile Include="2_7_02_Builtin.py" />
+    <Compile Include="module.py" />
+    <Compile Include="3_4_A_OuterModule.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="myPackage\myPack1.py" />
+    <Compile Include="myPackage\myPack2.py" />
+    <Compile Include="myPackage\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="myPackage\" />
+    <Folder Include="myPackage\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="myPackage\__pycache__\myPack1.cpython-39.pyc" />
+    <Content Include="myPackage\__pycache__\myPack2.cpython-39.pyc" />
+    <Content Include="myPackage\__pycache__\__init__.cpython-39.pyc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

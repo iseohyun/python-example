@@ -11,7 +11,7 @@ string3 = '더블따옴표(")를 손쉽게 출력합니다.'
 print(string3)
 
 string4 = "따옴표(')도 가능해요.\n\n"
-print(string4)
+print(string4 * 3) # 3번 출력
 
 string5 = """여러줄을 출력하고 싶어요
 그러면 따옴표를 세번 입력하시고
