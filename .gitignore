@@ -1,2 +1,6 @@
 .vs/*
-**/__pycache__/
+__*
+*.txt
+*.pickle
+*.html
+dir.json
