@@ -18,5 +18,6 @@ def fib2(n):  # return Fibonacci series up to n
     return result
 
 if __name__ == "__main__":
+    print("이 파일에서 실행되었습니다.")
     import sys
     fib(int(sys.argv[1]))
