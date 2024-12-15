@@ -17,4 +17,4 @@ print(index)
 print(python.count("n"))
 print(python.find("Java"))  # 없으면 -1반환
 print(python.index("Java"))  # error 프로그램 종료
-print("End")  # 실행안됨
+# print("End")  # 실행안됨
