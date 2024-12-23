@@ -8,10 +8,7 @@ match val:
         print("second")
     case 3:
         print("third")
-    case 4:
-        print("fourth")
-    case 5:
-        print("fifth")
+    case 4 | 5:
+        print("fourth or fifth")
     case _:
         print("none of those")
-        
